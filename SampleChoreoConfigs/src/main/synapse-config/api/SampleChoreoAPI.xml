@@ -12,4 +12,16 @@
         <outSequence/>
         <faultSequence/>
     </resource>
+    <resource methods="GET" uri-template="/sampleRes2">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>{"Hello":"World"}</format>
+                <args/>
+            </payloadFactory>
+            <log level="full"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
 </api>
