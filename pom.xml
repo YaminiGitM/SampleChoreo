@@ -26,7 +26,7 @@
   </distributionManagement>
   <properties>
     <project.scm.id>integration-project</project.scm.id>
-    <project.runtime.version>4.2.0.17</project.runtime.version>
+    <project.runtime.version>4.2.0</project.runtime.version>
   </properties>
   <build>
     <plugins>
@@ -55,6 +55,10 @@
     <profile>
       <id>Solution</id>
       <build />
+      <modules>
+        <module>SampleChoreoConfigs</module>
+        <module>SampleChoreoCompositeExporter</module>
+      </modules>
     </profile>
     <profile>
       <id>Docker</id>
@@ -69,6 +73,10 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <build />
+      <modules>
+        <module>SampleChoreoConfigs</module>
+        <module>SampleChoreoCompositeExporter</module>
+      </modules>
     </profile>
   </profiles>
 </project>

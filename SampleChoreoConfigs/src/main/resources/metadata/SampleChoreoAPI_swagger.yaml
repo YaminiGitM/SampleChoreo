@@ -11,3 +11,8 @@ paths:
       responses:
         default:
           description: Default response
+  /sampleRes2:
+    get:
+      responses:
+        default:
+          description: Default response
